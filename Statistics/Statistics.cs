@@ -9,9 +9,9 @@ namespace Statistics
         {
             Stats obj = new Stats();
             if (numbers.Count > 0) {
-                obj.max = numbers.Max();
-                obj.min = numbers.Min();
-                obj.average = numbers.Average();
+                obj.max = numbers.Max<double>();
+                obj.min = numbers.Min<double>();
+                obj.average = numbers.Average<double>();
             }
             else {
                 obj.max = double.NaN;
