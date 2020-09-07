@@ -11,7 +11,7 @@ namespace Statistics
             if (numbers.Count > 0) {
                 obj.max = numbers.Max<double>();
                 obj.min = numbers.Min<double>();
-                obj.average = numbers.Average<double>();
+                obj.average = numbers.Average();
             }
             else {
                 obj.max = double.NaN;
