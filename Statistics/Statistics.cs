@@ -5,7 +5,7 @@ namespace Statistics
 {
     public class StatsComputer
     {
-        public Stats CalculateStatistics(List<Double> numbers)
+        public Stats CalculateStatistics(List<double> numbers)
         {
             Stats obj = new Stats();
             if (numbers.Count > 0) {
@@ -14,9 +14,9 @@ namespace Statistics
                 obj.average = numbers.Average();
             }
             else {
-                obj.max = Double.NaN;
-                obj.min = Double.NaN;
-                obj.average = Double.NaN;
+                obj.max = double.NaN;
+                obj.min = double.NaN;
+                obj.average = double.NaN;
             }
             return obj;
         }
